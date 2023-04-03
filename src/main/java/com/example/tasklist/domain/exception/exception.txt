@@ -1,0 +1,12 @@
+ResourceNotfoundException - ismes ,kai me snieko nerasim pagal ID
+ir sakysim controller kad mes neturim tokio iraso
+
+RunTimeException - gali ramiai isvesti klaida
+
+public ResourceNotFoundException(String message)
+        super(message)  - konstruktorius pateiks info apie klaida
+
+public class ResourceMappingException - kai JDBC bus klaidos traukiant duomenys is DB
+
+public class AccessDeniedException - padarom savo isimti, kad nuspresti ar gali user kreiptis i kita useri arba i uzduotis
+(pvz. user ID1 kreipsis i uzduoti kuri priklauso user ID2)
