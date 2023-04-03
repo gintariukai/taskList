@@ -1,0 +1,6 @@
+@Data - automatiskai sukuria getter setter, kurie reikalingi bendrauti su objektu
+
+    private String passwordConfirmation; // objektas saugo passw ir service galim suliginti, ir atmesti ara testi
+    private Set<Role> roles; //
+    private List<Task> tasks; // uzduotis kuri suagosis pas si user
+

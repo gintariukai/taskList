@@ -1,0 +1,10 @@
+domain
+    visos klases kurie turi duomenys:
+        -user,
+        -role user,
+        -uzduotis task,
+        -status task (padaryta, procese, bus padaryta)
+    visos package reikalingos atlikti logika:
+        -exception
+        -user
+        -task

@@ -1,0 +1,5 @@
+repository
+    aprasytos interface klases kurie leidzia gauti leidima prie db ir su ja bendrauti
+        - controller ->
+        - service ->
+        - repository -> data (db)

@@ -1,0 +1,7 @@
+private LocalDateTime expirationDate; // laikas nustato user savo uzduociai atlikti
+
+TODO - butina padaryti,
+IN_PROGRESS - procese,
+DONE - padaryta
+
+Frontend gali rusioti ir rodyti user`ui kaip jam patogu
