@@ -3,3 +3,31 @@ repository
         - controller ->
         - service ->
         - repository -> data (db)
+
+    impl -
+
+    mappers - deka jo pervesim-paduosim Set is DB i musu objektus User ir Task
+
+    public interface UserReopistory - keli metodai:
+        - Optional<User> findById(Long id) - grazina nul arba ne, Visi metodai kurie grazina jie vadinasi Find,
+        o  serviso lygyje GET t.y grazina pati objekta arba exception jeigu obj nerastas
+        - Optional<User> findByUsername - tai reikalinga patikrinimui registracijos metu ir tam,
+        kad Spring Security galetu autorizuoti User
+        - void update(User user) - priims User, issaugos jo DB ir nieko negrazins, jeigu ivyks Exception tai ismes exception
+        - void create(User user) - priims User ir DB Set jam ID, ir sitas ID bus Set sitam User i DB
+        - void insertUserRole(Long userId, Role role) - registruojant paduosim ID ir Role
+
+    Metodai daro viena operacija, sukurs User, prides jam Role kur bus tik viena Role User ir kvies sita Role i DB sita metoda
+
+    - boolean isTaskOwner(Long userId, Long taskId) - tikrins ar UserId yra savininkas TaskId tai reikalinga del saugumo
+
+    - List<Task> findAllByUserId(Long userId) - gausim visus List kuri priklauso UserId
+
+    - void assignToUserById(Long taskId, Long userId)- repository sukuria Task, service paduoda visus TaskId ir surisa su UserID
+
+
+
+
+
+
+
