@@ -1,0 +1,3 @@
+dto - Data Transfer Object tai objektas kuris reikalingas perduoti info per interneta
+mes nesiusim iskart visa objekta user
+mes mapping aprasysim objektus dto i objektus entity, cia taip vdinamos klases User Task ir atvirksciai
