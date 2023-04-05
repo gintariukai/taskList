@@ -25,6 +25,13 @@ repository
 
     - void assignToUserById(Long taskId, Long userId)- repository sukuria Task, service paduoda visus TaskId ir surisa su UserID
 
+    Turim dbr realizuoti sitos du interface ir sukursim implementacijos.
+
+    Implemento metodus kvies servisas controllerio pagalba, kad bendrautusu uzklausom , kurios daro User
+
+    @ anotacijos priklausomybes kurie pagalba Spring sukurti @autowired rysis vienas is svarbiausiu technologiju ir pliuso Spring objekta Task per istorija implement ir veliau istatyti
+
+
 
 
 
