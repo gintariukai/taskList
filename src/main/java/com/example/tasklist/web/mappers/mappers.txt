@@ -3,3 +3,9 @@ public interface UserMapper {
 }
 
 tai reiskia, kad sukurs komponenta sitos realizacijos ir mes galesim kvesti kaip klase per autoware
+
+padarysim anotacijas, kad Spring galetu dar ieinant patikrinti ar jie atitinka  rusiai
+
+  @NotNull - pasako kai objektaas ateina per request Body Spring, t.y is fronto turi tureti ne tuscius langus
+
+  @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) -  mes galim tik priimti password DTO, o siusti Service nesius
