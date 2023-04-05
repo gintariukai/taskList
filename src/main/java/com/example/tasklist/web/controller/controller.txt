@@ -1,0 +1,7 @@
+controllers - kurie priims uzklausos
+
+@RestController - grazina Json ir pranesa kad cia controlleris
+
+@RequestMapping("/api/v1/tasks") - per si api gausim leidima prie metodu ir logikos sio controllerio
+
+
