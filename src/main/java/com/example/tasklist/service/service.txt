@@ -1,1 +1,4 @@
 UserService - kviesis metodai is controllerio, kuris reikalingas bendrauti su User
+ JwtResponse priims requst
+  JwtRequest  grazins todel kad mes dirbsim su jwt autorizuojant su dviem token ACCCESS ir REFRESH, todel mes turim
+  priimti password ir grazinti token su kurio User gales kreiptis i musu servisa
