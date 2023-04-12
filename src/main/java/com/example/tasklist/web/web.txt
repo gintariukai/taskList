@@ -1,3 +1,15 @@
 dto - Data Transfer Object tai objektas kuris reikalingas perduoti info per interneta
 mes nesiusim iskart visa objekta user
 mes mapping aprasysim objektus dto i objektus entity, cia taip vdinamos klases User Task ir atvirksciai
+
+public class JwtEntity - suagosim Uesr Springui
+
+ private final Collection<? extends GrantedAuthority> authorities - kolekcija leidimu,roliu kurios turi user Springui, taip mes galime perduoti, taip atrodo pas Spring
+
+public class JwtEntityFactory - kur kursim pateri is User JwtEntity (panasiai kaip mapper)
+
+private static List<GrantedAuthority> mapToGrantedAuthorities(List<Role> roles) - aprasom logiga, kad Spring suprastu ka mes turim omeny.
+Sis metoda grazina ir vadinasi map..., kuris priema List Roliu. Roles priema musu pavidale, nes mes roles galim pateikti bet kokiam pavidale.
+Mes tiesiog mapinam Spring Security, aprasom logika tarp musu ir Springo
+
+tokenProvider - sukuria tokena, tikrina ji ir visumoj bendrauja su tokenu

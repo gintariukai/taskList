@@ -9,3 +9,8 @@ spring:
       mode: always
       continue-on-error: false
 #      data-locations: classpath:demo_data.sql
+security:
+  jwt:
+    secret: TGFiYXNBc015bGl1SmF2YUppTWFuTGFiYWlQYXRpbmthVGFpU3VwZXI=
+    access: 3600000
+    refresh: 2592000000
