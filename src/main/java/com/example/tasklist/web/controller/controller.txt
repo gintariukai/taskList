@@ -4,4 +4,5 @@ controllers - kurie priims uzklausos
 
 @RequestMapping("/api/v1/tasks") - per si api gausim leidima prie metodu ir logikos sio controllerio
 
+@RequestMapping("/api/v1/auth") i ApplicationConfig permitAll  uzklausos pateiks be patikrinimo, o visos kitos su authenticated
 
