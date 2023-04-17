@@ -16,6 +16,15 @@ public class TaskRepositoryImpl implements TaskRepository {
     private final DataSourceConfig dataSourceConfig;
 
     private final String FIND_BY_ID = """
+            SELECT t.id              as task_id,
+                   t.title           as task_title,
+                   t.description     as task_description,
+                   t.expiration_date as task_expiration_date,
+                   t.status          as task_status
+            FROM tasks t
+            WHERE id = ?""";
+
+    private final String FIND_ALL_BY_USER_ID = """
             """;
 
     @Override
