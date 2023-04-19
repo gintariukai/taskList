@@ -34,7 +34,7 @@ public class TaskServiceImpl implements TaskService {
     @Transactional
     public Task update(Task task) {
         if (task.getStatus() == null) {
-            task.setStatus(String.valueOf(Status.TODO));
+            task.setStatus(Status.TODO);
         }
         taskRepository.update(task);
         return task;
@@ -43,7 +43,7 @@ public class TaskServiceImpl implements TaskService {
     @Override
     @Transactional
     public Task create(Task task, Long userId) {
-        task.setStatus(String.valueOf(Status.TODO));
+        task.setStatus(Status.TODO);
         taskRepository.create(task);
         taskRepository.assignToUserById(task.getId(), userId);
         return task;
