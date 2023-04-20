@@ -2,9 +2,11 @@ package com.example.tasklist.repository;
 
 import com.example.tasklist.domain.user.Role;
 import com.example.tasklist.domain.user.User;
+import org.mapstruct.Mapper;
 
 import java.util.Optional;
 
+//@Mapper
 public interface UserRepository {
 
     Optional<User> findById(Long id);

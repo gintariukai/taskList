@@ -31,6 +31,8 @@ repository
 
     @ anotacijos priklausomybes kurie pagalba Spring sukurti @autowired rysis vienas is svarbiausiu technologiju ir pliuso Spring objekta Task per istorija implement ir veliau istatyti
 
+ Mybatis - framework kuris skyriasi nuo hibernate kuris map objektus i DB i lentele db, o Mybatis map string i objektus
+
 
 
 
