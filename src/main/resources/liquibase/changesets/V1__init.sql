@@ -1,6 +1,6 @@
 create table if not exists users
 (
-    id       int primary key,
+    id       bigserial primary key,
     name     varchar(255) not null,
     username varchar(255) not null unique,
     password varchar(255) not null
@@ -8,7 +8,7 @@ create table if not exists users
 
 create table if not exists tasks
 (
-    id              int primary key,
+    id              bigserial primary key,
     title           varchar(255) not null,
     description     varchar(255) null,
     status          varchar(255) not null,
