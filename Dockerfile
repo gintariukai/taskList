@@ -1,4 +1,3 @@
 FROM openjdk:17
-WORKDIR /usr/src/tasklist
-COPY ./target/taskList-*.jar .
-CMD java -jar < find taskList-*.jar
+COPY target/*.jar application.jar
+ENTRYPOINT ["java", "-jar", "application.jar"]

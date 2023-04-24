@@ -4,9 +4,11 @@ services:
   app:
     build:
       context: .
+      dockerfile: ./Dockerfile
     container_name: tasklist
     depends_on:
       - db
+    image: tasklist_app
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/tasklist?currentSchema=tasklist
       - SPRING_DATASOURCE_USERNAME=postgres
@@ -21,3 +23,5 @@ services:
         - POSTGRES_USER=postgres
         - POSTGRES_PASSWORD=password
         - POSTGRES_DB=tasklist
+      volumes:
+        - ./src/main/resources/db-init:/docker-entrypoint-initdb.d

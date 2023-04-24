@@ -68,7 +68,7 @@ public class ApplicationConfig {
                 )
                 .info(new Info()
                         .title("Task list API")
-                        .description("Demo Spring Boot application")
+                        .description("My Project Spring Boot application")
                         .version("1.0")
                 );
     }
